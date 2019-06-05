@@ -281,6 +281,12 @@ WebInspector.Main.prototype = {
             return;
         }
 
+        if (Runtime.queryParam("wss")) {
+            var ws = "wss://" + Runtime.queryParam("wss");
+            WebInspector.WebSocketConnection.Create(ws, this._connectionEstablished.bind(this));
+            return;
+        }
+
         if (!InspectorFrontendHost.isHostedMode()) {
             this._connectionEstablished(new WebInspector.MainConnection());
             return;
