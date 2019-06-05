@@ -8,4 +8,4 @@ Default webOS DevTools sometimes can be broken. This repo contains fixed DevTool
 ## How To Run DevTools
 To start DevTools you should checkout to specific branch and run static http server in `front_end` folder.
 
-That's all! Now you can open DevTools on url like: http://localhost:8090/front_end/inspector.html?ws={websocket url for page you want to inspect}
+That's all! Now you can open DevTools on url like: `http://localhost:8090/front_end/inspector.html?ws={websocket url for page you want to inspect}`
