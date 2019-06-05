@@ -2378,7 +2378,7 @@ WebInspector.StylePropertyTreeElement.prototype = {
 
         if (selectElement.parentElement)
             selectElement.parentElement.classList.add("child-editing");
-        selectElement.textContent = selectElement.textContent; // remove color swatch and the like
+        selectElement.textContent = selectElement.textContent || ' '; // remove color swatch and the like
 
         /**
          * @param {!WebInspector.StylePropertyTreeElement.Context} context
